@@ -155,6 +155,29 @@ ng new angular-ssr-nestjs --routing --style=scss --skip-install --skip-git --min
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Modify .gitignore
+
+Add the following to the .gitignore file
+
+```
+# node
+package-lock.json
+
+# yarn
+yarn.lock
+yarn-error.log
+
+# Firebase
+.firebase/*
+firebase-debug.log
+```
+
+## Install Angular Universal module for Nest
+
+```
+ng add @nestjs/ng-universal
+```
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
